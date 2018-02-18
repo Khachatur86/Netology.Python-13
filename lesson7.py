@@ -1,3 +1,5 @@
 class Animals():
+    legs=4
 class Birds(Animals):
-class
+    legs=2
+class Artiodactyls(Animals):
