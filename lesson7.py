@@ -1,7 +1,7 @@
 class Animals():
     """Common class of animals"""
 
-    def __init__(self, name: str , legs: int, food: str) -> object:
+    def __init__(self, name: object, legs: object, food: object) -> object:
         self.name = ""
         self.legs = 4
         self.food = ""
