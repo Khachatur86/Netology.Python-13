@@ -62,3 +62,4 @@ goose = Birds("Seriy", 2, "bread crumbs")
 goose.sound("Gagaga")
 goose.display()
 
+
