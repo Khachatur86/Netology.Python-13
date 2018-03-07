@@ -1,3 +1,4 @@
+
 class Animals():
     """Common class of animals"""
 
@@ -11,7 +12,8 @@ class Animals():
         print("I cry",self.voice,".")
         
     def display(self):
-        print("I am eating a " , self.food,".") # Разобрался :) Я бы хотел, чтобы не указывая в скобках переменную food оно работало правильно: оно бы брало food из __init__, возможно ли такое?
+        print("I am eating a " , self.food,".") # Разобрался :) Я бы хотел, чтобы не указывая в скобках переменную food
+        #  оно работало правильно: оно бы брало food из __init__, возможно ли такое?
     
 
 
