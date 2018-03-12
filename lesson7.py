@@ -2,19 +2,19 @@
 class Animals():
     """Common class of animals"""
 
-    def __init__(self, name, legs, food):
+    def __init__(self, name, legs, food, type_of_animal):
         self.name = name
         self.legs = legs
         self.food = food
+        self.type_of_animal = type_of_animal
 
     def sound(self, voice):
         self.voice = voice
         print("I cry",self.voice,".")
         
     def display(self):
-        print("I am eating a " , self.food,".") # Разобрался :) Я бы хотел, чтобы не указывая в скобках переменную food
-        #  оно работало правильно: оно бы брало food из __init__, возможно ли такое?
-    
+        print("I am", self.type_of_animal, ".")
+        print("I am eating a " , self.food,".")
 
 
 """Class of birds"""
@@ -36,37 +36,37 @@ class Artiodactyls(Animals):
 
         
 
-duck = Birds("Donald", 2, "worm")
+duck = Birds("Donald", 2, "worm", "duck")
 duck.sound("kryakrya")
 duck.display() 
 duck.height_of_flight(1700)
 
-hen = Birds("Petya", 2, "bread crumbs")
+hen = Birds("Petya", 2, "bread crumbs", "hen")
 hen.sound("kukareku")
 hen.display()
 hen.height_of_flight(10)
 
-goose = Birds("Seriy", 2, "bread crumbs")
+goose = Birds("Seriy", 2, "bread crumbs", "goose")
 goose.sound("gagaga")
 goose.display()
 goose.height_of_flight(15)
 
-cow = Artiodactyls("Buurenka", 4, "grass")
+cow = Artiodactyls("Buurenka", 4, "grass", "cow")
 cow.sound("muuu")
 cow.display()
 cow.distance_of_running(10)
 
-goat = Artiodactyls("Marta", 4, "grass")
+goat = Artiodactyls("Marta", 4, "grass", "goat")
 goat.sound("beeeee")
 goat.display()
 goat.distance_of_running(17)
 
-sheep = Artiodactyls("Shon", 4, "grass")
+sheep = Artiodactyls("Shon", 4, "grass", "sheep")
 sheep.sound("beebee")
 sheep.display()
 sheep.distance_of_running(9)
 
-pig = Artiodactyls("Funtic", 4, "acorn")
+pig = Artiodactyls("Funtic", 4, "acorn", "pig")
 pig.sound("khrukhru")
 pig.display()
 pig.distance_of_running(30)
