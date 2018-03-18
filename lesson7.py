@@ -1,4 +1,3 @@
-
 class Animals():
     """Common class of animals"""
 
@@ -10,65 +9,90 @@ class Animals():
 
     def sound(self, voice):
         self.voice = voice
-        print("I cry",self.voice,".")
-        
+        print("I cry", self.voice, ".")
+
     def display(self):
         print("I am", self.type_of_animal, ".")
-        print("I am eating a " , self.food,".")
+        print("I am eating a ", self.food, ".")
 
 
 """Class of birds"""
 
 
 class Birds(Animals):
-   def height_of_flight (self, height):
-    self.height = height
-    print("I can fly an",self.height, "metrs above the Earth.")
+    def height_of_flight(self, height):
+        self.height = height
+        print("I can fly an", self.height, "metrs above the Earth.")
 
 
 """Class of Artodactils"""
 
 
 class Artiodactyls(Animals):
-    def distance_of_running (self, distance):
+    def distance_of_running(self, distance):
         self.distance = distance
         print("I can run a:", self.distance, "miles.")
 
-        
 
-duck = Birds("Donald", 2, "worm", "duck")
+class Ducks(Birds):
+    pass
+
+
+class Hens(Birds):
+    pass
+
+
+class Gooses(Birds):
+    pass
+
+
+class Cows(Artiodactyls):
+    pass
+
+
+class Goats(Artiodactyls):
+    pass
+
+
+class Sheeps(Artiodactyls):
+    pass
+
+
+class Pigs(Artiodactyls):
+    pass
+
+
+duck = Ducks("Donald", 2, "worm", "duck")
 duck.sound("kryakrya")
-duck.display() 
+duck.display()
 duck.height_of_flight(1700)
 
-hen = Birds("Petya", 2, "bread crumbs", "hen")
+hen = Hens("Petya", 2, "bread crumbs", "hen")
 hen.sound("kukareku")
 hen.display()
 hen.height_of_flight(10)
 
-goose = Birds("Seriy", 2, "bread crumbs", "goose")
+goose = Gooses("Seriy", 2, "bread crumbs", "goose")
 goose.sound("gagaga")
 goose.display()
 goose.height_of_flight(15)
 
-cow = Artiodactyls("Buurenka", 4, "grass", "cow")
+cow = Cows("Buurenka", 4, "grass", "cow")
 cow.sound("muuu")
 cow.display()
 cow.distance_of_running(10)
 
-goat = Artiodactyls("Marta", 4, "grass", "goat")
+goat = Goats("Marta", 4, "grass", "goat")
 goat.sound("beeeee")
 goat.display()
 goat.distance_of_running(17)
 
-sheep = Artiodactyls("Shon", 4, "grass", "sheep")
+sheep = Sheeps("Shon", 4, "grass", "sheep")
 sheep.sound("beebee")
 sheep.display()
 sheep.distance_of_running(9)
 
-pig = Artiodactyls("Funtic", 4, "acorn", "pig")
+pig = Pigs("Funtic", 4, "acorn", "pig")
 pig.sound("khrukhru")
 pig.display()
 pig.distance_of_running(30)
-
-
